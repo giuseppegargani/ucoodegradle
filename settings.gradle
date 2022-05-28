@@ -1,0 +1,3 @@
+rootProject.name = 'ucoodegradle'
+include 'gradle-plugin'
+

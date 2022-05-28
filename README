@@ -1,1 +1,15 @@
-Write something in this textfile
+This is a gradle library that works together with an android library to help team work in doing json reports for Unit and instrumented tests for continuos integration and continuos development.
+The other library is a jitpack library:
+- we should add the dependency in app build gradle:     implementation 'com.github.giuseppegargani:JsonReport:0.0.1'
+- and (eventually) add the maven repository to jitpack in settings.gradle:          maven { url 'https://jitpack.io' }
+    in settings.gradle file:
+    dependencyResolutionManagement {
+        repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+        repositories {
+            google()
+            mavenCentral()
+            mavenLocal()
+            jcenter() // Warning: this repository is going to shut down soon
+            maven { url 'https://jitpack.io' }
+        }
+    }
